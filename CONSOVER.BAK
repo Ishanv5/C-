@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+class A
+{
+int a,b;
+float c;
+   public:
+       A()
+       {
+       cout<< " Enter two values ";
+       cin>>a>>b;
+       cout<<a<< " "<<b<<endl;
+       }
+       A(int x,int y)
+       {
+       a=x;
+       b=y;
+       cout<<a<<" "<<b;
+       }
+       A(int x,float y)
+       {
+       a=x;
+       c=y;
+       cout<<a<<  " "<<c;
+       }
+};
+void main()
+{
+clrscr();
+A obj,obj2(100,200),obj3(10,20.5f);
+getch();
+}
